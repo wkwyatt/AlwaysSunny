@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54012681C0D1736008958DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54012671C0D1736008958DA /* AppDelegate.swift */; };
+		C540126D1C0D1736008958DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C540126B1C0D1736008958DA /* Main.storyboard */; };
+		C540126F1C0D1736008958DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C540126E1C0D1736008958DA /* Assets.xcassets */; };
+		C54012721C0D1736008958DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54012701C0D1736008958DA /* LaunchScreen.storyboard */; };
+		C540127D1C0D1737008958DA /* AlwaysSunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C540127C1C0D1737008958DA /* AlwaysSunnyTests.swift */; };
+		C54012881C0D1737008958DA /* AlwaysSunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54012871C0D1737008958DA /* AlwaysSunnyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54012791C0D1737008958DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C540125C1C0D1736008958DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54012631C0D1736008958DA;
+			remoteInfo = AlwaysSunny;
+		};
+		C54012841C0D1737008958DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C540125C1C0D1736008958DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54012631C0D1736008958DA;
+			remoteInfo = AlwaysSunny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C54012641C0D1736008958DA /* AlwaysSunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysSunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54012671C0D1736008958DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C540126C1C0D1736008958DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C540126E1C0D1736008958DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54012711C0D1736008958DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54012731C0D1736008958DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54012781C0D1737008958DA /* AlwaysSunnyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysSunnyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C540127C1C0D1737008958DA /* AlwaysSunnyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysSunnyTests.swift; sourceTree = "<group>"; };
+		C540127E1C0D1737008958DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54012831C0D1737008958DA /* AlwaysSunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysSunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54012871C0D1737008958DA /* AlwaysSunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysSunnyUITests.swift; sourceTree = "<group>"; };
+		C54012891C0D1737008958DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54012611C0D1736008958DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54012751C0D1737008958DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54012801C0D1737008958DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C540125B1C0D1736008958DA = {
+			isa = PBXGroup;
+			children = (
+				C54012661C0D1736008958DA /* AlwaysSunny */,
+				C540127B1C0D1737008958DA /* AlwaysSunnyTests */,
+				C54012861C0D1737008958DA /* AlwaysSunnyUITests */,
+				C54012651C0D1736008958DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54012651C0D1736008958DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54012641C0D1736008958DA /* AlwaysSunny.app */,
+				C54012781C0D1737008958DA /* AlwaysSunnyTests.xctest */,
+				C54012831C0D1737008958DA /* AlwaysSunnyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54012661C0D1736008958DA /* AlwaysSunny */ = {
+			isa = PBXGroup;
+			children = (
+				C54012671C0D1736008958DA /* AppDelegate.swift */,
+				C540126B1C0D1736008958DA /* Main.storyboard */,
+				C540126E1C0D1736008958DA /* Assets.xcassets */,
+				C54012701C0D1736008958DA /* LaunchScreen.storyboard */,
+				C54012731C0D1736008958DA /* Info.plist */,
+			);
+			path = AlwaysSunny;
+			sourceTree = "<group>";
+		};
+		C540127B1C0D1737008958DA /* AlwaysSunnyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C540127C1C0D1737008958DA /* AlwaysSunnyTests.swift */,
+				C540127E1C0D1737008958DA /* Info.plist */,
+			);
+			path = AlwaysSunnyTests;
+			sourceTree = "<group>";
+		};
+		C54012861C0D1737008958DA /* AlwaysSunnyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C54012871C0D1737008958DA /* AlwaysSunnyUITests.swift */,
+				C54012891C0D1737008958DA /* Info.plist */,
+			);
+			path = AlwaysSunnyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54012631C0D1736008958DA /* AlwaysSunny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C540128C1C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunny" */;
+			buildPhases = (
+				C54012601C0D1736008958DA /* Sources */,
+				C54012611C0D1736008958DA /* Frameworks */,
+				C54012621C0D1736008958DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlwaysSunny;
+			productName = AlwaysSunny;
+			productReference = C54012641C0D1736008958DA /* AlwaysSunny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54012771C0D1737008958DA /* AlwaysSunnyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C540128F1C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyTests" */;
+			buildPhases = (
+				C54012741C0D1737008958DA /* Sources */,
+				C54012751C0D1737008958DA /* Frameworks */,
+				C54012761C0D1737008958DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C540127A1C0D1737008958DA /* PBXTargetDependency */,
+			);
+			name = AlwaysSunnyTests;
+			productName = AlwaysSunnyTests;
+			productReference = C54012781C0D1737008958DA /* AlwaysSunnyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C54012821C0D1737008958DA /* AlwaysSunnyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54012921C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyUITests" */;
+			buildPhases = (
+				C540127F1C0D1737008958DA /* Sources */,
+				C54012801C0D1737008958DA /* Frameworks */,
+				C54012811C0D1737008958DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54012851C0D1737008958DA /* PBXTargetDependency */,
+			);
+			name = AlwaysSunnyUITests;
+			productName = AlwaysSunnyUITests;
+			productReference = C54012831C0D1737008958DA /* AlwaysSunnyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C540125C1C0D1736008958DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Will Wyatt";
+				TargetAttributes = {
+					C54012631C0D1736008958DA = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = JJ65EE6UJU;
+					};
+					C54012771C0D1737008958DA = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = JJ65EE6UJU;
+						TestTargetID = C54012631C0D1736008958DA;
+					};
+					C54012821C0D1737008958DA = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = JJ65EE6UJU;
+						TestTargetID = C54012631C0D1736008958DA;
+					};
+				};
+			};
+			buildConfigurationList = C540125F1C0D1736008958DA /* Build configuration list for PBXProject "AlwaysSunny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C540125B1C0D1736008958DA;
+			productRefGroup = C54012651C0D1736008958DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54012631C0D1736008958DA /* AlwaysSunny */,
+				C54012771C0D1737008958DA /* AlwaysSunnyTests */,
+				C54012821C0D1737008958DA /* AlwaysSunnyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54012621C0D1736008958DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54012721C0D1736008958DA /* LaunchScreen.storyboard in Resources */,
+				C540126F1C0D1736008958DA /* Assets.xcassets in Resources */,
+				C540126D1C0D1736008958DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54012761C0D1737008958DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54012811C0D1737008958DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54012601C0D1736008958DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54012681C0D1736008958DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54012741C0D1737008958DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C540127D1C0D1737008958DA /* AlwaysSunnyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C540127F1C0D1737008958DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54012881C0D1737008958DA /* AlwaysSunnyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C540127A1C0D1737008958DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54012631C0D1736008958DA /* AlwaysSunny */;
+			targetProxy = C54012791C0D1737008958DA /* PBXContainerItemProxy */;
+		};
+		C54012851C0D1737008958DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54012631C0D1736008958DA /* AlwaysSunny */;
+			targetProxy = C54012841C0D1737008958DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C540126B1C0D1736008958DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C540126C1C0D1736008958DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54012701C0D1736008958DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54012711C0D1736008958DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C540128A1C0D1737008958DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C540128B1C0D1737008958DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C540128D1C0D1737008958DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlwaysSunny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C540128E1C0D1737008958DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlwaysSunny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C54012901C0D1737008958DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlwaysSunnyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunnyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlwaysSunny.app/AlwaysSunny";
+			};
+			name = Debug;
+		};
+		C54012911C0D1737008958DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlwaysSunnyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunnyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlwaysSunny.app/AlwaysSunny";
+			};
+			name = Release;
+		};
+		C54012931C0D1737008958DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlwaysSunnyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunnyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlwaysSunny;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C54012941C0D1737008958DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlwaysSunnyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyattwill.AlwaysSunnyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlwaysSunny;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C540125F1C0D1736008958DA /* Build configuration list for PBXProject "AlwaysSunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C540128A1C0D1737008958DA /* Debug */,
+				C540128B1C0D1737008958DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C540128C1C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C540128D1C0D1737008958DA /* Debug */,
+				C540128E1C0D1737008958DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C540128F1C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54012901C0D1737008958DA /* Debug */,
+				C54012911C0D1737008958DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C54012921C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54012931C0D1737008958DA /* Debug */,
+				C54012941C0D1737008958DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C540125C1C0D1736008958DA /* Project object */;
+}
