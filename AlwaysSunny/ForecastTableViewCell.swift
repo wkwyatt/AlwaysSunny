@@ -1,3 +1,4 @@
+// TODO: add the min and max temps of the day from the json obj
 //
 //  ForecastTableViewCell.swift
 //  AlwaysSunny
@@ -10,6 +11,12 @@ import UIKit
 
 class ForecastTableViewCell: UITableViewCell {
 
+    //****  OUTLETS  ****//
+    @IBOutlet weak var forecastImageView: UIImageView!
+    @IBOutlet weak var forecastDayLabel: UILabel!
+    @IBOutlet weak var forecastDescriptionLabel: UILabel!
+// TODO: add the min and max temps of the day from the json obj
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

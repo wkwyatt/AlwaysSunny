@@ -11,8 +11,8 @@ import UIKit
 
 class WeeklyForecastVC: UIViewController {
     
-//    var forecast:[Forecast]?
-//    var currentForecast:Forecast?
+    var forecast:[Forecast]?
+    var currentForecast:Forecast?
 
 //****  OUTLETS  ****//
     @IBOutlet weak var tableView: UITableView!

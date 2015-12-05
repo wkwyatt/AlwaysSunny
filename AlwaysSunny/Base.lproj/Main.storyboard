@@ -92,12 +92,6 @@
                                                         <constraint firstAttribute="width" constant="40" id="sxt-8Y-yHc"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomorrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-Zj-WjW">
-                                                    <rect key="frame" x="63" y="8" width="98" height="27"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go8-cV-KuZ">
                                                     <rect key="frame" x="63" y="36" width="41" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -113,6 +107,12 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-5Q-k1X">
                                                     <rect key="frame" x="512" y="36" width="25" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomorrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-Zj-WjW">
+                                                    <rect key="frame" x="63" y="8" width="98" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -138,6 +138,12 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="forecastDayLabel" destination="wZB-Zj-WjW" id="tx8-cx-vet"/>
+                                            <outlet property="forecastDescriptionLabel" destination="go8-cV-KuZ" id="LKG-RJ-5RK"/>
+                                            <outlet property="forecastImageView" destination="vVa-mI-Lfx" id="N29-uj-oy5"/>
+                                            <outlet property="mainForecastImageView" destination="vVa-mI-Lfx" id="yS3-cC-zd0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
