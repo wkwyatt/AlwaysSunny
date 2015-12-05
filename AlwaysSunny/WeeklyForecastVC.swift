@@ -1,4 +1,4 @@
-// TODO: add the min and max temps of the day from the json obj
+
 //
 //  WeeklyForecastVC.swift
 //  AlwaysSunny
@@ -21,7 +21,7 @@ class WeeklyForecastVC: UIViewController {
     @IBOutlet weak var currentDateLabel: UILabel!
     @IBOutlet weak var currentForecastMinLabel: UILabel!
     @IBOutlet weak var currentForecastMaxLabel: UILabel!
-// TODO: add the min and max temps of the day from the json obj
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,14 @@ class WeeklyForecastVC: UIViewController {
             self.currentForecastMinLabel.text = "\((self.currentForecast?.minTemp)!)º"
             self.currentForecastMaxLabel.text = "\((self.currentForecast?.maxTemp)!)º"
         }
+        
+        // Get the current date
+        // Format date by string
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMM dd"
+        let dateString = formatter.stringFromDate(NSDate())
+        self.currentDateLabel.text = "Today, \(dateString)"
+        
 //        self.currentForecastImage.image = UIImage(named: (self.currentForecast?.mainImage)!)
 //        self.currentForecastDescriptionLabel.text = self.currentForecast?.forecast
 //        self.currentForecastMinLabel.text = self.currentForecast?.minTemp
