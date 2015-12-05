@@ -13,6 +13,10 @@
 		C54012721C0D1736008958DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54012701C0D1736008958DA /* LaunchScreen.storyboard */; };
 		C540127D1C0D1737008958DA /* AlwaysSunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C540127C1C0D1737008958DA /* AlwaysSunnyTests.swift */; };
 		C54012881C0D1737008958DA /* AlwaysSunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54012871C0D1737008958DA /* AlwaysSunnyUITests.swift */; };
+		C59291B11C136A5100775B91 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B01C136A5100775B91 /* Forecast.swift */; };
+		C59291B31C136AA000775B91 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B21C136AA000775B91 /* WebServiceManager.swift */; };
+		C59291B51C136B3400775B91 /* WeeklyForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */; };
+		C59291B71C136C7500775B91 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		C54012831C0D1737008958DA /* AlwaysSunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysSunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54012871C0D1737008958DA /* AlwaysSunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysSunnyUITests.swift; sourceTree = "<group>"; };
 		C54012891C0D1737008958DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59291B01C136A5100775B91 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		C59291B21C136AA000775B91 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyForecastVC.swift; sourceTree = "<group>"; };
+		C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				C540126E1C0D1736008958DA /* Assets.xcassets */,
 				C54012701C0D1736008958DA /* LaunchScreen.storyboard */,
 				C54012731C0D1736008958DA /* Info.plist */,
+				C59291B01C136A5100775B91 /* Forecast.swift */,
+				C59291B21C136AA000775B91 /* WebServiceManager.swift */,
+				C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */,
+				C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */,
 			);
 			path = AlwaysSunny;
 			sourceTree = "<group>";
@@ -256,7 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59291B11C136A5100775B91 /* Forecast.swift in Sources */,
+				C59291B71C136C7500775B91 /* ForecastTableViewCell.swift in Sources */,
 				C54012681C0D1736008958DA /* AppDelegate.swift in Sources */,
+				C59291B51C136B3400775B91 /* WeeklyForecastVC.swift in Sources */,
+				C59291B31C136AA000775B91 /* WebServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +499,7 @@
 				C540128E1C0D1737008958DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C540128F1C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +508,7 @@
 				C54012911C0D1737008958DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C54012921C0D1737008958DA /* Build configuration list for PBXNativeTarget "AlwaysSunnyUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				C54012941C0D1737008958DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
