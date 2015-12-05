@@ -45,9 +45,12 @@ struct WebServiceManager {
                 var forecastData = Forecast()
                 do {
                     if let jsonObject: [String:AnyObject] = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String:AnyObject] {
-                        let currentForecast = self.parseDailyForecast(jsonObject)
-                        forecastData = currentForecast
-                        callback(forecastData)
+                        
+                        dispatch_async(dispatch_get_main_queue()) {
+                            let currentForecast = self.parseDailyForecast(jsonObject)
+                            forecastData = currentForecast
+                            callback(forecastData)
+                        }
                     }
                 } catch {
                     // handle the error
