@@ -7,13 +7,12 @@
 //
 
 import Foundation
-import UIKit
 
-struct Forecast {
+class Forecast {
     var date:String?
     var forecast:String?
-    var minTemp:String?
-    var maxTemp:String?
+    var minTemp:Int?
+    var maxTemp:Int?
     var mainImage:String?
     var thumbnail:String?
 }

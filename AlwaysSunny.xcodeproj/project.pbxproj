@@ -17,6 +17,7 @@
 		C59291B31C136AA000775B91 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B21C136AA000775B91 /* WebServiceManager.swift */; };
 		C59291B51C136B3400775B91 /* WeeklyForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */; };
 		C59291B71C136C7500775B91 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */; };
+		C59291B91C1374E800775B91 /* PrivateKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59291B81C1374E800775B91 /* PrivateKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C59291B21C136AA000775B91 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyForecastVC.swift; sourceTree = "<group>"; };
 		C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		C59291B81C1374E800775B91 /* PrivateKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C59291B21C136AA000775B91 /* WebServiceManager.swift */,
 				C59291B41C136B3400775B91 /* WeeklyForecastVC.swift */,
 				C59291B61C136C7500775B91 /* ForecastTableViewCell.swift */,
+				C59291B81C1374E800775B91 /* PrivateKeys.swift */,
 			);
 			path = AlwaysSunny;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59291B11C136A5100775B91 /* Forecast.swift in Sources */,
+				C59291B91C1374E800775B91 /* PrivateKeys.swift in Sources */,
 				C59291B71C136C7500775B91 /* ForecastTableViewCell.swift in Sources */,
 				C54012681C0D1736008958DA /* AppDelegate.swift in Sources */,
 				C59291B51C136B3400775B91 /* WeeklyForecastVC.swift in Sources */,
