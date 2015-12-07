@@ -15,21 +15,48 @@ struct WebServiceManager {
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request) { data, response, error in
-            
+            if error == nil {
+                var forecastData = [Forecast]()
+                do {
+                    if let jsonObject: [String:AnyObject] = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)as? [String:AnyObject] {
+                        dispatch_async(dispatch_get_main_queue()) {
+                            let weeklyForecast = self.parseWeeklyForecast(jsonObject)
+                            forecastData = weeklyForecast
+                            callback(forecastData)
+                        }
+                    }
+                } catch {
+                    //  We have an error parsing the forecast data from json
+                    callback([])
+                }
+                //  We have a data error
+                print("There is a error with the data")
+            }
         }
         
         task.resume()
     }
     
-    func parseWeeklyForecast(jsonDictionary:[String:AnyObject]) -> Forecast {
-        let forecast = Forecast()
+    func parseWeeklyForecast(jsonDictionary:[String:AnyObject]) -> [Forecast] {
+        var forecast = [Forecast]()
         
-//        date:String?
-//        forecast:String?
-//        minTemp:String?
-//        maxTemp:String?
-//        mainImage:String?
-//        thumbnail:String?
+        
+        if let weeklyWeatherDictionary = jsonDictionary["list"] as? [AnyObject] {
+            for day in weeklyWeatherDictionary {
+                let thisForecast = Forecast()
+                if let tempDictionary = day["temp"] as? [String: AnyObject] {
+                    thisForecast.minTemp = tempDictionary["min"] as? Int
+                    thisForecast.maxTemp = tempDictionary["max"] as? Int
+                }
+                if let weatherDictionary = day["weather"] as? [AnyObject] {
+                    for element in weatherDictionary {
+                        thisForecast.forecast = element["main"] as? String
+                        thisForecast.thumbnail = element["icon"] as? String
+                    }
+                }
+                forecast.append(thisForecast)
+            }
+        }
         
         return forecast
     }
