@@ -15,6 +15,8 @@ class ForecastTableViewCell: UITableViewCell {
     @IBOutlet weak var forecastImageView: UIImageView!
     @IBOutlet weak var forecastDayLabel: UILabel!
     @IBOutlet weak var forecastDescriptionLabel: UILabel!
+    @IBOutlet weak var minTempLabel: UILabel!
+    @IBOutlet weak var maxTempLabel: UILabel!
 // TODO: add the min and max temps of the day from the json obj
     
     override func awakeFromNib() {

@@ -142,6 +142,8 @@
                                             <outlet property="forecastDayLabel" destination="wZB-Zj-WjW" id="tx8-cx-vet"/>
                                             <outlet property="forecastDescriptionLabel" destination="go8-cV-KuZ" id="LKG-RJ-5RK"/>
                                             <outlet property="forecastImageView" destination="vVa-mI-Lfx" id="0pO-D8-hAp"/>
+                                            <outlet property="maxTempLabel" destination="wdq-5Q-k1X" id="dsW-fv-Bk5"/>
+                                            <outlet property="minTempLabel" destination="Bri-c1-dsU" id="UtG-CD-sHN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -43,6 +43,12 @@ class WeeklyForecastVC: UIViewController {
             self.currentForecastMaxLabel.text = "\((self.currentForecast?.maxTemp)!)º"
         }
         
+        wsm.fetchWeeklyWeatherForecastData { (weeklyForecast) -> Void in
+            //code for closure
+            self.forecast = weeklyForecast
+            self.tableView.reloadData()
+        }
+        
         // Get the current date
         // Format date by string
         let formatter = NSDateFormatter()
@@ -78,15 +84,30 @@ class WeeklyForecastVC: UIViewController {
 extension WeeklyForecastVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier("ForecastCellReuseID") as? ForecastTableViewCell {
-            return cell
+        if let thisForecast: Forecast = forecast?[indexPath.row] {
+            if let cell = tableView.dequeueReusableCellWithIdentifier("ForecastCellReuseID") as? ForecastTableViewCell {
+                // Get the current date
+                // Format date by string
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "EEEE"
+                print("index path : \(indexPath.row).. double path: \(Double(indexPath.row))..\(NSDate())")
+                let theDay = NSDate().dateByAddingTimeInterval(Double(indexPath.row) as NSTimeInterval)
+                let dateString = formatter.stringFromDate(theDay)
+                cell.forecastDayLabel.text = "\(dateString)"
+                cell.minTempLabel.text = "\((thisForecast.minTemp)!)"
+                cell.maxTempLabel.text = "\((thisForecast.maxTemp)!)"
+                cell.forecastDescriptionLabel.text = thisForecast.forecast
+                cell.forecastImageView.image = UIImage(named: "\(thisForecast.thumbnail!)-icon")
+                return cell
+            }
         }
+        
         return UITableViewCell()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if forecast != nil {
-            forecast!.count
+            return forecast!.count
         }
         return 1
     }
