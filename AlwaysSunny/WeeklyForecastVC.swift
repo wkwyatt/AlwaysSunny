@@ -91,7 +91,7 @@ extension WeeklyForecastVC: UITableViewDataSource, UITableViewDelegate {
                 let formatter = NSDateFormatter()
                 formatter.dateFormat = "EEEE"
                 print("index path : \(indexPath.row).. double path: \(Double(indexPath.row))..\(NSDate())")
-                let theDay = NSDate().dateByAddingTimeInterval(Double(indexPath.row) as NSTimeInterval)
+                let theDay = NSDate().dateByAddingTimeInterval((60*60*24*(Double(indexPath.row) + 1)) as NSTimeInterval)
                 let dateString = formatter.stringFromDate(theDay)
                 cell.forecastDayLabel.text = "\(dateString)"
                 cell.minTempLabel.text = "\((thisForecast.minTemp)!)"
